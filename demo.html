@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cinestar</title>
+
+		<!-- Bootstrap -->
+		<link href="default/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="default/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- PE Icon 7 Stoke -->
+		<link href="default/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+		<link href="default/fonts/pe-icon-7-stroke/css/helper.css" rel="stylesheet">
+		<!-- PE Icon Social -->
+		<link href="default/fonts/pe-icon-social/css/pe-icon-social.css" rel="stylesheet">
+		<link href="default/fonts/pe-icon-social/css/helper.css" rel="stylesheet">
+		<!-- Animate.css -->
+		<link href="default/css/animate.min.css" rel="stylesheet">
+		<!-- Owl Carousel -->
+		<link href="default/css/owl.carousel.css" rel="stylesheet">
+		<link href="default/css/owl.theme.default.css" rel="stylesheet">
+		<!-- YTPlayer -->
+		<link href="default/css/jquery.mb.YTPlayer.min.css" rel="stylesheet">
+		<!-- Nivo Lightbox -->
+		<link href="default/scripts/Nivo-Lightbox/nivo-lightbox.css" rel="stylesheet">
+		<link href="default/scripts/Nivo-Lightbox/themes/default/default.css" rel="stylesheet">
+		<!-- Slider -->
+		<link href="default/css/slider.css" rel="stylesheet">
+		<!-- Style.css -->
+		<link href="default/css/style.css" rel="stylesheet">
+
+		<style type="text/css">
+			body {
+				background: #f1f2f6;
+				color: #949fab;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+				letter-spacing: 1.4px;
+			}
+			a {
+				color: #158ba1;
+			}
+			h1 {
+				font-size: 150px;
+				line-height: 150px;
+				letter-spacing: 15px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #efefef;
+				text-align: center;
+				margin: 0;
+			}
+			h1 small {
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 700;
+				color: #fff;
+				margin-top: 12px;
+			}
+			h2 {
+				font-size: 48px;
+				line-height: 58px;
+				letter-spacing: 4.8px;
+				font-weight: 300;
+				margin: 0;
+				color: #158ba1;
+				text-transform: uppercase;
+				text-align: center;
+				margin-bottom: 120px;
+			}
+			h2 small {
+				font-size: 26px;
+				line-height: 26px;
+				font-weight: 300;
+				color: #2f3c4e;
+				letter-spacing: 2.6px;
+				display: block;
+			}
+			h3 {
+				font-size: 26px;
+				line-height: 31px;
+				font-weight: 300;
+				letter-spacing: 2.6px;
+				color: #2f3c4e;
+				margin: 0;
+				margin-bottom: 28px;
+				text-transform: uppercase;
+			}
+			h4 {
+				font-size: 24px;
+				line-height: 36px;
+				font-weight: 300;
+				color: #2f3c4e;
+				text-transform: none;
+				margin: 0;
+				margin-bottom: 12px;
+			}
+			.header {
+				background: none;
+				color: #2f3c4e;
+				text-transform: uppercase;
+				line-height: 90px;
+				padding: 0 45px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 6;
+				height: 90px;
+			}
+			.header .logo {
+				font-size: 36px;
+				font-weight: 700;
+				position: absolute;
+				top: 0;
+				left: 20px;
+				letter-spacing: 7.2px;
+				color: #fff;
+			}
+			.header .button {
+				font-weight: 400;
+				position: absolute;
+				top: 19px;
+				right: 20px;
+			}
+			.header .container {
+				position: relative;
+				border-bottom: 1px solid rgba(255,255,255,.25);
+			}
+			.intro {
+				height: 560px;
+				background: #000;
+				position: relative;
+			}
+			.cb-slideshow, .cb-slideshow:after {
+				position: relative;
+				overflow: hidden;
+				margin: 0;
+				z-index: 0;
+			}
+			.intro .content {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				transform: translateY(-50%);
+				z-index: 5;
+			}
+			.scroll {
+				position: absolute;
+				bottom: 38px;
+				left: 0;
+				right: 0;
+				text-align: center;
+			}
+			section {
+				padding: 72px 0;
+			}
+			footer {
+				background: #11151e;
+				text-align: center;
+			}
+			.footer-top {
+				position: relative;
+			}
+			.footer-top .content {
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				transform: translateY(-50%);
+				width: 100%;
+			}
+			.footer-bottom {
+				line-height: 130px;
+				font-size: 14px;
+				letter-spacing: 1.4px;
+				color: #fff;
+				text-transform: uppercase;
+			}
+			footer h4 {
+				color: #fff;
+			}
+			.button {
+				background: #158ba1;
+				font-size: 14px;
+			}
+			.preview-button {
+				background: none;
+				color: #000;
+				border: 2px solid #000;
+				font-size: 14px;
+			}
+			.preview-button:hover {
+				background: #158ba1;
+				color: #fff;
+				border-color: #158ba1;
+			}
+			.button span {
+				color: #000;
+			}
+			.header-menu {
+				margin: 0;
+				text-align: center;
+			}
+			.header-menu ul {
+				margin: 0;
+				font-size: 0;
+			}
+			.header-menu ul li {
+				display: inline-block;
+				margin: 0 20px;
+			}
+			.header-menu ul li a {
+				font-size: 16px;
+				letter-spacing: 1.6px;
+				color: #fff;
+				font-weight: 400;
+			}
+			.header-menu ul li:hover a {
+				color: #158ba1;
+			}
+			@media all and (max-width: 769px) {
+				.header {
+					line-height: 36px;
+					padding: 0;
+					height: auto;
+					text-align: center;
+					padding-top: 24px;
+				}
+				.header .logo {
+					position: relative;
+					top: 0;
+					left: 0;
+					width: 100%;
+					text-align: center;
+					margin-bottom: 12px;
+				}
+				.header .button {
+					position: relative;
+					top: 0;
+					right: 0;
+					text-align: center;
+					margin-top: 12px;
+					margin-bottom: 24px;
+				}
+				.header-menu ul li {
+					margin: 0 10px;
+				}
+				h1 {
+					font-size: 36px;
+					line-height: 36px;
+					padding-top: 160px;
+				}
+				.intro {
+					height: 567px;
+				}
+				h2 {
+					font-size: 36px;
+					line-height: 46px;
+					margin-bottom: 48px;
+				}
+				section {
+					padding: 48px 0;
+				}
+				footer h4 {
+					font-size: 18px;
+					line-height: 28px;
+					margin-bottom: 24px;
+				}
+				.footer-top .content {
+					position: relative;
+					top: 0;
+					-webkit-transform: translateY(0);
+					-moz-transform: translateY(0);
+					transform: translateY(0);
+					width: 100%;
+					margin: 24px 0;
+				}
+				.footer-bottom {
+					line-height: 48px;
+				}
+			}
+			.header-menu ul>li ul {
+				opacity: 0;
+				filter: alpha(opacity=0);
+				visibility: hidden;
+				-webkit-transition: .25s;
+				-moz-transition: .25s;
+				-o-transition: .25s;
+				-ms-transition: .25s;
+				transition: .25s;
+				position: absolute;
+				top: 96px;
+				height: auto;
+				padding: 0;
+				z-index: 999;
+				text-align: left;
+				padding: 0;
+			}
+			.header-menu ul>li ul li {
+				white-space: nowrap;
+				position: relative;
+				display: block;
+				padding: 0;
+				padding-top: 9px;
+				margin: 0;
+			}
+			.header-menu ul>li ul li a {
+				background: #fff;
+				height: 50px;
+				width: 100%;
+				line-height: 50px;
+				padding: 0 20px;
+				color: #2f3c4e;
+				min-width: 300px;
+				display: block;
+				border-bottom: none;
+			}
+			.header-menu ul>li:hover ul li a {
+				color: #2f3c4e;
+			}
+			.header-menu ul>li ul li a:hover, .header-menu ul>li ul li:hover a {
+				background: #158ba1;
+				color: #fff;
+				opacity: 1;
+			}
+			.header-menu ul>li ul li a:after {
+				content: none;
+			}
+			.header-menu ul>li ul li ul {
+				opacity: 0;
+				filter: alpha(opacity=0);
+				visibility: hidden;
+				-webkit-transition: .25s;
+				-moz-transition: .25s;
+				-o-transition: .25s;
+				-ms-transition: .25s;
+				transition: .25s;
+				position: absolute;
+				left: 100%;
+				top: 0;
+				margin-left: 0;
+				padding-left: 9px;
+			}
+			.header-menu ul>li ul li:hover ul li a {
+				background: #fff;
+				color: #2f3c4e;
+			}
+			.header-menu ul>li ul li:hover ul li a:hover {
+				background: #158ba1;
+				color: #fff;
+			}
+			.header-menu ul>li:hover>ul {
+				opacity: 1;
+				filter: alpha(opacity=100);
+				visibility: visible;
+			}
+			.responsive-menu-open {
+				font-size: 30px;
+				height: 90px;
+				width: auto;
+				line-height: 90px;
+				text-align: center;
+				color: #fff;
+				display: none;
+				position: relative;
+				margin: 0 auto;
+			}
+			.responsive-menu-open:hover {
+				color: #158ba1;
+			}
+			.responsive-menu {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				right: 100%;
+				min-width: 100%;
+				background: #fff;
+				z-index: 999;
+				padding: 24px;
+				overflow-y: scroll;
+				-webkit-transition: .25s;
+				-moz-transition: .25s;
+				-o-transition: .25s;
+				-ms-transition: .25s;
+				transition: .25s;
+				font-size: 0;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+			.responsive-menu.open {
+				right: 0;
+			}
+			.responsive-menu .responsive-menu-open {
+				display: none;
+			}
+			.responsive-menu-close {
+				position: absolute;
+				top: 0;
+				right: 0;
+				font-size: 24px;
+				color: #2f3c4e;
+				display: inline-block;
+				line-height: 52px;
+				height: 52px;
+				width: 52px;
+				text-align: center;
+			}
+			.responsive-menu-close:hover {
+				color: #158ba1;
+				opacity: 1;
+			}
+			.responsive-menu-nav ul>li a {
+				font-size: 14px;
+				color: #2f3c4e;
+				padding: 0;
+				line-height: 36px;
+				display: inline-block;
+				position: relative;
+			}
+			.responsive-menu-nav ul>li a:hover {
+				opacity: 1;
+				color: #158ba1;
+			}
+			.no-scroll {
+				overflow: hidden !important;
+			}
+			@media all and (max-width: 1200px) {
+				.header-menu {
+					display: none;
+				}
+				.responsive-menu-open {
+					display: block;
+				}
+			}
+			@media all and (max-width: 768px) {
+				.responsive-menu-open {
+					height: 48px;
+					line-height: 48px;
+				}
+			}
+			.aligned-cols {
+				display: table;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+			}
+			.aligned-cols>.col-sm-1, .aligned-cols>.col-sm-10, .aligned-cols>.col-sm-11, .aligned-cols>.col-sm-12, .aligned-cols>.col-sm-2, .aligned-cols>.col-sm-3, .aligned-cols>.col-sm-4, .aligned-cols>.col-sm-5, .aligned-cols>.col-sm-6, .aligned-cols>.col-sm-7, .aligned-cols>.col-sm-7, .aligned-cols>.col-sm-9 {
+				display: table-cell;
+				float: none;
+				vertical-align: top;
+				height: 100%;
+			}
+			.aligned-cols>.col-md-1, .aligned-cols>.col-md-10, .aligned-cols>.col-md-11, .aligned-cols>.col-md-12, .aligned-cols>.col-md-2, .aligned-cols>.col-md-3, .aligned-cols>.col-md-4, .aligned-cols>.col-md-5, .aligned-cols>.col-md-6, .aligned-cols>.col-md-7, .aligned-cols>.col-md-8, .aligned-cols>.col-md-9 {
+				display: table-cell;
+				float: none;
+				vertical-align: top;
+				height: 100%;
+			}
+			.aligned-cols>.aligned-bottom {
+				vertical-align: bottom;
+			}
+			.aligned-cols>.aligned-middle {
+				vertical-align: middle;
+			}
+			@media all and (max-width: 992px) {
+				.aligned-cols-md {
+					display: block;
+				}
+				.aligned-cols .col-md-1, .aligned-cols .col-md-10, .aligned-cols .col-md-11, .aligned-cols .col-md-12, .aligned-cols .col-md-2, .aligned-cols .col-md-3, .aligned-cols .col-md-4, .aligned-cols .col-md-5, .aligned-cols .col-md-6, .aligned-cols .col-md-7, .aligned-cols .col-md-8, .aligned-cols .col-md-9 {
+					display: block;
+					width: 100%;
+				}
+				.aligned-cols img {
+					margin-bottom: 24px;
+				}
+			}
+			@media all and (max-width: 768px) {
+				.aligned-cols {
+					display: block;
+				}
+				.aligned-cols .col-sm-1, .aligned-cols .col-sm-10, .aligned-cols .col-sm-11, .aligned-cols .col-sm-12, .aligned-cols .col-sm-2, .aligned-cols .col-sm-3, .aligned-cols .col-sm-4, .aligned-cols .col-sm-5, .aligned-cols .col-sm-6, .aligned-cols .col-sm-7, .aligned-cols .col-sm-7, .aligned-cols .col-sm-9 {
+					display: block;
+					width: 100%;
+				}
+			}
+		</style>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		
+		<header class="header clearfix">
+			<div class="container">
+				<div class="logo">CINESTAR</div>
+				<nav class="header-menu">
+					<ul class="list-unstyled">
+						<li>
+							<a href="#">Home</a>
+							<ul>
+								<li>
+									<a href="default/index.html" target="_blank">Default Version</a>
+									<ul>
+										<li><a href="default/index.html" target="_blank">Static Image</a></li>
+										<li><a href="default/index-slider.html" target="_blank">Slider Background</a></li>
+										<li><a href="default/index-kenburns.html" target="_blank">Ken Burn Effect</a></li>
+										<li><a href="default/index-youtube.html" target="_blank">YouTube Video</a></li>
+										<li><a href="default/index-video.html" target="_blank">Self Hosted Video</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="civil_war/index.html" target="_blank">Civil War Version</a>
+									<ul>
+										<li><a href="civil_war/index.html" target="_blank">Static Image</a></li>
+										<li><a href="civil_war/index-slider.html" target="_blank">Slider Background</a></li>
+										<li><a href="civil_war/index-kenburns.html" target="_blank">Ken Burn Effect</a></li>
+										<li><a href="civil_war/index-youtube.html" target="_blank">YouTube Video</a></li>
+										<li><a href="civil_war/index-video.html" target="_blank">Self Hosted Video</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="history/index.html" target="_blank">History Version</a>
+									<ul>
+										<li><a href="history/index.html" target="_blank">Static Image</a></li>
+										<li><a href="history/index-slider.html" target="_blank">Slider Background</a></li>
+										<li><a href="history/index-kenburns.html" target="_blank">Ken Burn Effect</a></li>
+										<li><a href="history/index-youtube.html" target="_blank">YouTube Video</a></li>
+										<li><a href="history/index-video.html" target="_blank">Self Hosted Video</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="nature/index.html" target="_blank">Nature Version</a>
+									<ul>
+										<li><a href="nature/index.html" target="_blank">Static Image</a></li>
+										<li><a href="nature/index-slider.html" target="_blank">Slider Background</a></li>
+										<li><a href="nature/index-kenburns.html" target="_blank">Ken Burn Effect</a></li>
+										<li><a href="nature/index-youtube.html" target="_blank">YouTube Video</a></li>
+										<li><a href="nature/index-video.html" target="_blank">Self Hosted Video</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="wildlife/index.html" target="_blank">Wildlife Version</a>
+									<ul>
+										<li><a href="wildlife/index.html" target="_blank">Static Image</a></li>
+										<li><a href="wildlife/index-slider.html" target="_blank">Slider Background</a></li>
+										<li><a href="wildlife/index-kenburns.html" target="_blank">Ken Burn Effect</a></li>
+										<li><a href="wildlife/index-youtube.html" target="_blank">YouTube Video</a></li>
+										<li><a href="wildlife/index-video.html" target="_blank">Self Hosted Video</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="animation/index.html" target="_blank">Animation Version</a>
+									<ul>
+										<li><a href="animation/index.html" target="_blank">Static Image</a></li>
+										<li><a href="animation/index-slider.html" target="_blank">Slider Background</a></li>
+										<li><a href="animation/index-kenburns.html" target="_blank">Ken Burn Effect</a></li>
+										<li><a href="animation/index-youtube.html" target="_blank">YouTube Video</a></li>
+										<li><a href="animation/index-video.html" target="_blank">Self Hosted Video</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Pages</a>
+							<ul>
+								<li>
+									<a href="default/404.html" target="_blank">404</a>
+									<ul>
+										<li><a href="default/404.html" target="_blank">Default Version</a></li>
+										<li><a href="civil_war/404.html" target="_blank">Civil War Version</a></li>
+										<li><a href="history/404.html" target="_blank">History Version</a></li>
+										<li><a href="nature/404.html" target="_blank">Nature Version</a></li>
+										<li><a href="wildlife/404.html" target="_blank">Wildlife Version</a></li>
+										<li><a href="animation/404.html" target="_blank">Animation Version</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="default/coming-soon.html" target="_blank">Coming Soon</a>
+									<ul>
+										<li><a href="default/coming-soon.html" target="_blank">Default Version</a></li>
+										<li><a href="civil_war/coming-soon.html" target="_blank">Civil War Version</a></li>
+										<li><a href="history/coming-soon.html" target="_blank">History Version</a></li>
+										<li><a href="nature/coming-soon.html" target="_blank">Nature Versoin</a></li>
+										<li><a href="wildlife/coming-soon.html" target="_blank">Wildlife Version</a></li>
+										<li><a href="animation/coming-soon.html" target="_blank">Animation Version</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+							<ul>
+								<li>
+									<a href="default/news.html" target="_blank">Blog Archive</a>
+									<ul>
+										<li><a href="default/news.html" target="_blank">Default Version</a></li>
+										<li><a href="civil_war/news.html" target="_blank">Civil War Version</a></li>
+										<li><a href="history/news.html" target="_blank">History Version</a></li>
+										<li><a href="nature/news.html" target="_blank">Nature Version</a></li>
+										<li><a href="wildlife/news.html" target="_blank">Wildlife Version</a></li>
+										<li><a href="animation/news.html" target="_blank">Animation Version</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="default/news_detail.html" target="_blank">Single Blog Post</a>
+									<ul>
+										<li><a href="default/news_detail.html" target="_blank">Default Version</a></li>
+										<li><a href="civil_war/news_detail.html" target="_blank">Civil War Version</a></li>
+										<li><a href="history/news_detail.html" target="_blank">History Version</a></li>
+										<li><a href="nature/news_detail.html" target="_blank">Nature Version</a></li>
+										<li><a href="wildlife/news_detail.html" target="_blank">Wildlife Version</a></li>
+										<li><a href="animation/news_detail.html" target="_blank">Animation Version</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<a href="" class="responsive-menu-open"><i class="fa fa-bars"></i></a>
+				<a href="http://themeforest.net/item/cinestar-film-marketing-responsive-html-template/16076245" class="button">Buy Now For <span>$17</span></a>
+			</div>
+		</header>
+		<div class="responsive-menu">
+			<a href="" class="responsive-menu-close"><i class="fa fa-times"></i></a>
+			<nav class="responsive-menu-nav"></nav> <!-- end .responsive-menu-nav -->
+		</div> <!-- end .responsive-menu -->
+
+		<div class="intro">
+			<ul class="cb-slideshow">
+				<li><span style="background-image: url('images/slider.jpg');">Image 06</span></li>
+				<li><span style="background-image: url('default/images/background01.jpg');">Image 01</span></li>
+				<li><span style="background-image: url('default/images/background02.jpg');">Image 02</span></li>
+				<li><span style="background-image: url('default/images/background03.jpg');">Image 03</span></li>
+				<li><span style="background-image: url('default/images/background04.jpg');">Image 04</span></li>
+				<li><span style="background-image: url('default/images/background02.jpg');">Image 05</span></li>
+			</ul>
+			<div class="content">
+				<h1>CINESTAR<small>A Film Marketing Responsive HTML Template</small></h1>
+			</div>
+		</div>
+
+		<section>
+			<div class="container text-center">
+				<div class="row aligned-cols">
+					<div class="col-sm-7">
+						<img src="images/space.jpg" alt="space" class="img-responsive">
+					</div>
+					<div class="col-sm-5 aligned-middle">
+						<h4>(Space) Default Genre Demo</h4>
+						<a target="_blank" href="default/index.html" class="button preview-button">Live Preview</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container text-center">
+				<div class="row aligned-cols">
+					<div class="col-sm-7">
+						<img src="images/civil-war.jpg" alt="civil-war" class="img-responsive">
+					</div>
+					<div class="col-sm-5 aligned-middle">
+						<h4>Civil War Genre Demo</h4>
+						<a target="_blank" href="civil_war/index.html" class="button preview-button">Live Preview</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container text-center">
+				<div class="row aligned-cols">
+					<div class="col-sm-7">
+						<img src="images/history.jpg" alt="history" class="img-responsive">
+					</div>
+					<div class="col-sm-5 aligned-middle">
+						<h4>History Genre Demo</h4>
+						<a target="_blank" href="history/index.html" class="button preview-button">Live Preview</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container text-center">
+				<div class="row aligned-cols">
+					<div class="col-sm-7">
+						<img src="images/nature.jpg" alt="nature" class="img-responsive">
+					</div>
+					<div class="col-sm-5 aligned-middle">
+						<h4>Nature Genre Demo</h4>
+						<a target="_blank" href="nature/index.html" class="button preview-button">Live Preview</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container text-center">
+				<div class="row aligned-cols">
+					<div class="col-sm-7">
+						<img src="images/wildlife.jpg" alt="wildlife" class="img-responsive">
+					</div>
+					<div class="col-sm-5 aligned-middle">
+						<h4>Wildlife Genre Demo</h4>
+						<a target="_blank" href="wildlife/index.html" class="button preview-button">Live Preview</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container text-center">
+				<div class="row aligned-cols">
+					<div class="col-sm-7">
+						<img src="images/animation.jpg" alt="animation" class="img-responsive">
+					</div>
+					<div class="col-sm-5 aligned-middle">
+						<h4>Animation Genre Demo</h4>
+						<a target="_blank" href="animation/index.html" class="button preview-button">Live Preview</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-top">
+				<div class="top"><img src="images/top-image.jpg" alt="Cinestar" class="img-responsive center-block"></div>
+				<div class="middle"><img src="images/middle-image.jpg" alt="Cinestar" class="img-responsive center-block"></div>
+				<div class="bottom"><img src="images/bottom-image.jpg" alt="Cinestar" class="img-responsive center-block"></div>
+				<div class="content">
+					<h4>Create your next stunning MOVIE site with this template TODAY!</h4>
+					<a href="http://themeforest.net/item/cinestar-film-marketing-responsive-html-template/16076245" class="button">Buy Now For <span>$17</span></a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				Copyright © 2016 All Rights Reserved by <a href="">wecookcode</a>
+			</div>
+		</footer>
+
+		<!-- jQuery -->
+		<script src="default/js/jquery-1.11.2.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="default/js/bootstrap.min.js"></script>
+		<!-- Isotope -->
+		<script src="default/js/isotope.pkgd.min.js"></script>
+		<script src="default/js/imagesloaded.pkgd.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="default/js/owl.carousel.min.js"></script>
+		<!-- Nice Scroll -->
+		<script src="default/js/jquery.nicescroll.min.js"></script>
+		<!-- YTPlayer -->
+		<script src="default/js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- Vide -->
+		<script src="default/js/jquery.vide.min.js"></script>
+		<!-- Nivo Lightbox -->
+		<script src="default/scripts/Nivo-Lightbox/nivo-lightbox.min.js"></script>
+		<!-- Countdown -->
+		<script src="default/js/countdown.js"></script>
+		<!-- Scripts.js -->
+		<script src="default/js/scripts.js"></script>
+
+		<script type="text/javascript">
+			$('.header-menu').children().clone().appendTo('.responsive-menu-nav');
+			$('.responsive-menu-open').on('click', function(event) {
+				event.preventDefault();
+				$('body').addClass('no-scroll');
+				$('.responsive-menu').addClass('open');
+				return false;
+			});
+			$('.responsive-menu-close').on('click', function(event) {
+				event.preventDefault();
+				$('body').removeClass('no-scroll');
+				$('.responsive-menu').removeClass('open');
+				return false;
+			});
+		</script>
+
+	</body>
+</html>
